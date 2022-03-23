@@ -1,0 +1,80 @@
+2022-03-22 16:10:49.933  INFO 21032 --- [restartedMain] com.kvinod.App                           : Starting App on 202011D with PID 21032 (C:\Users\bf2066\Desktop\java\springboot-mongodb-redis-example\target\classes started by bf2066 in C:\Users\bf2066\Desktop\java\springboot-mongodb-redis-example)
+2022-03-22 16:10:49.946  INFO 21032 --- [restartedMain] com.kvinod.App                           : No active profile set, falling back to default profiles: default
+2022-03-22 16:10:49.995  INFO 21032 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-22 16:10:49.996  INFO 21032 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-22 16:10:50.934  INFO 21032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-03-22 16:10:50.946  INFO 21032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-03-22 16:10:51.084  INFO 21032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 133ms. Found 1 repository interfaces.
+2022-03-22 16:10:51.096  INFO 21032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-03-22 16:10:51.097  INFO 21032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-03-22 16:10:51.108  INFO 21032 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.kvinod.repository.UserRepository.
+2022-03-22 16:10:51.109  INFO 21032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
+2022-03-22 16:10:51.840  INFO 21032 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 2233 (http)
+2022-03-22 16:10:51.873  INFO 21032 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-22 16:10:51.874  INFO 21032 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2022-03-22 16:10:51.958  INFO 21032 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-22 16:10:51.959  INFO 21032 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1962 ms
+2022-03-22 16:10:52.590  INFO 21032 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-03-22 16:10:52.672  INFO 21032 --- [cluster-ClusterId{value='6239848c73893d5228467c7c', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:1}] to localhost:27017
+2022-03-22 16:10:52.676  INFO 21032 --- [cluster-ClusterId{value='6239848c73893d5228467c7c', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 6]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2925500}
+2022-03-22 16:10:53.003  INFO 21032 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-22 16:10:53.419  INFO 21032 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-22 16:10:54.352  INFO 21032 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-03-22 16:10:54.480  INFO 21032 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 2233 (http) with context path ''
+2022-03-22 16:10:54.486  INFO 21032 --- [restartedMain] com.kvinod.App                           : Started App in 4.933 seconds (JVM running for 5.597)
+2022-03-22 16:11:09.651  INFO 21032 --- [http-nio-2233-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-22 16:11:09.652  INFO 21032 --- [http-nio-2233-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-22 16:11:09.660  INFO 21032 --- [http-nio-2233-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2022-03-22 16:11:09.779  INFO 21032 --- [http-nio-2233-exec-2] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2022-03-22 16:11:09.784  INFO 21032 --- [http-nio-2233-exec-2] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2022-03-22 16:11:12.114 ERROR 21032 --- [http-nio-2233-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379] with root cause
+
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_302]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716) ~[na:1.8.0_302]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327) ~[netty-transport-4.1.39.Final.jar:4.1.39.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:336) ~[netty-transport-4.1.39.Final.jar:4.1.39.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:685) ~[netty-transport-4.1.39.Final.jar:4.1.39.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:632) ~[netty-transport-4.1.39.Final.jar:4.1.39.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:549) ~[netty-transport-4.1.39.Final.jar:4.1.39.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:511) ~[netty-transport-4.1.39.Final.jar:4.1.39.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918) ~[netty-common-4.1.39.Final.jar:4.1.39.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.39.Final.jar:4.1.39.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.39.Final.jar:4.1.39.Final]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_302]
+
+2022-03-22 16:11:42.382  INFO 21032 --- [http-nio-2233-exec-1] com.kvinod.controllers.UserController    : returning list of all users
+2022-03-22 16:11:42.409 DEBUG 21032 --- [http-nio-2233-exec-1] o.s.data.mongodb.core.MongoTemplate      : find using query: { } fields: Document{{}} for class: class com.kvinod.entity.User in collection: user
+2022-03-22 16:11:42.447  INFO 21032 --- [http-nio-2233-exec-1] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:2}] to localhost:27017
+2022-03-22 22:48:54.694  INFO 1568 --- [restartedMain] com.kvinod.App                           : Starting App on 202011D with PID 1568 (C:\Users\bf2066\Desktop\java\jenkin-mongodb-rest\target\classes started by bf2066 in C:\Users\bf2066\Desktop\java\jenkin-mongodb-rest)
+2022-03-22 22:48:54.698  INFO 1568 --- [restartedMain] com.kvinod.App                           : No active profile set, falling back to default profiles: default
+2022-03-22 22:48:54.751  INFO 1568 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-22 22:48:54.752  INFO 1568 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-22 22:48:55.856  INFO 1568 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-03-22 22:48:55.859  INFO 1568 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-03-22 22:48:56.009  INFO 1568 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 146ms. Found 1 repository interfaces.
+2022-03-22 22:48:56.015  INFO 1568 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-03-22 22:48:56.020  INFO 1568 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-03-22 22:48:56.031  INFO 1568 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.kvinod.repository.UserRepository.
+2022-03-22 22:48:56.032  INFO 1568 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
+2022-03-22 22:48:56.905  INFO 1568 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 2233 (http)
+2022-03-22 22:48:56.937  INFO 1568 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-22 22:48:56.937  INFO 1568 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2022-03-22 22:48:57.029  INFO 1568 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-22 22:48:57.030  INFO 1568 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2278 ms
+2022-03-22 22:48:57.749  INFO 1568 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-03-22 22:48:57.917  INFO 1568 --- [cluster-ClusterId{value='6239e1d973893d0620b2a0a1', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:11}] to localhost:27017
+2022-03-22 22:48:57.925  INFO 1568 --- [cluster-ClusterId{value='6239e1d973893d0620b2a0a1', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 6]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=5781900}
+2022-03-22 22:48:58.224  INFO 1568 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-22 22:48:58.655  INFO 1568 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-22 22:48:59.482  INFO 1568 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-03-22 22:48:59.675  INFO 1568 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 2233 (http) with context path ''
+2022-03-22 22:48:59.682  INFO 1568 --- [restartedMain] com.kvinod.App                           : Started App in 5.405 seconds (JVM running for 6.219)
+2022-03-22 22:49:19.501  INFO 1568 --- [http-nio-2233-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-22 22:49:19.517  INFO 1568 --- [http-nio-2233-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-22 22:49:19.788  INFO 1568 --- [http-nio-2233-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 271 ms
+2022-03-22 22:49:20.181  INFO 1568 --- [http-nio-2233-exec-1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2022-03-22 22:49:20.184  INFO 1568 --- [http-nio-2233-exec-1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2022-03-22 22:49:21.573  INFO 1568 --- [http-nio-2233-exec-1] com.kvinod.controllers.UserController    : returning list of all users
+2022-03-22 22:49:21.615 DEBUG 1568 --- [http-nio-2233-exec-1] o.s.data.mongodb.core.MongoTemplate      : find using query: { } fields: Document{{}} for class: class com.kvinod.entity.User in collection: user
+2022-03-22 22:49:21.664  INFO 1568 --- [http-nio-2233-exec-1] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:12}] to localhost:27017
